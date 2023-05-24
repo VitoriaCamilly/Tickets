@@ -16,6 +16,7 @@ public class UsuarioController implements ControllerInterface<UsuarioDTO, Long>{
 
     @Override
     public ResponseEntity<?> create(UsuarioDTO usuarioDTO) {
+        System.out.println("Chegou aqui");
         return ResponseEntity.ok(usuarioService.create(usuarioDTO));
     }
 
